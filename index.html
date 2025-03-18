@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My resume</title>
+    <link rel="stylesheet" href="resume.css">
+</head>
+
+<body>
+    <div class="resume" id="resume">
+        <div class="details">
+            <img src="denoh.jpg" alt="photo">
+            <h2>CONTACT</h2>
+            <hr>
+            <ul class="contact">
+                <li class="cont-detail tell">0740236240</li>
+                <li class="cont-detail email">dwambua253@gmail.com</li>
+                <li class="cont-detail location">Rongai, Kajiado</li>
+            </ul>
+            <h2>EDUCATION</h2>
+            <hr>
+            <ul class="education">
+                <li class="edu-details">
+                    <p>2022 - present </p>
+                    <h3>Kirinyaga University</h3>
+                <li>Bacheror of Computer Science</li>
+                </li>
+                <li class="edu-details-1">
+                    <p>2017 - 2022</p>
+                    <h3>Mutithi Secondary School</h3>
+                </li>
+
+            </ul>
+
+            <div class="tech-qua-aim">
+                <h2>TECHNICAL SKILLS</h2>
+                <hr>
+                <ul class="skills">
+                    <li class="skills-details">React</li>
+                    <li class="skills-details">JavaScript</li>
+                    <li class="skills-details">CSS</li>
+                    <li class="skills-details">HTML</li>
+                </ul>
+                <h2>QUALITIES</h2>
+                <hr>
+                <ul class="qualities">
+                    <li class="qua-details">Hardworking</li>
+                    <li class="qua-details">Time management</li>
+                    <li class="qua-details">Teamwork</li>
+                    
+                </ul>
+                <h2>AIM</h2>
+                <hr>
+                <ul class="aim">
+                    <li class="aim-details">
+                        <h3>To be a full stack developer</h3>
+                        <p>Currently i have been majoring on frontend</p>
+                        <div class="nothing"></div>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="information">
+            <div class="name-role">
+                <h1 class="name">Dennis Mwaura</h1>
+                <h2 class="role">Student</h2>
+            </div>
+            <div class="about">
+                <div class="profile">
+                    <h2>PROFILE</h2>
+                    <hr>
+                    <p>Motivated and detail-oriented Computer Science
+                        student at Kirinyaga University, majoring in website
+                        development with a focus on frontend technologies.
+                        Proficient in React.js, JavaScript, CSS, and HTML,
+                        with hands-on experience in building responsive web
+                        applications
+                    </p>
+                </div>
+                <div class="experience">
+                    <h2>WORK EXPERIENCE (During the last attachment period)</h2>
+                    <hr>
+                    <h4>Carl and Kyles solution</h4>
+                    <h3>Networking, frontend development and other works </h3>
+                    <ul class="ul-experience">
+                        <li> -Engaged in the field of Networking & Security ie.
+                            <b>Wifi & CCTV installation</b>
+                        </li>
+                        <li>
+                            -sharpened my skills in javascript frontend technology
+                        </li>
+                        <li>
+                            -volunteered in any other work that would arise
+                        </li>
+                    </ul>
+
+                </div>
+                <div class="achievements">
+                    <h2>ACHIEVEMENT</h2>
+                    <hr>
+                    <p>Built a fully responsive website that displays the most reviwed movies and has other
+                        functionality
+                        like adding the favourite movies
+                        <li><a href="https://mymoviecard.netlify.app/">my MovieCard</a></li>
+                    </p>
+                </div>
+
+                <div class="reference">
+                    <div class="ref1">
+                        <h2>REFERENCES</h2>
+                        <P>Gilbert Kiarie</P>
+                        <p>CEO <span><a href="https://carlnkyle.co.ke/">Carl and Kyles solutions</a></span></p>
+                        <p>0727341653</p>
+                    </div>
+
+                    <div class="ref2">
+                        <P>Patric</P>
+                        <p>Manager <span><a href="https://carlnkyle.co.ke/">Carl and Kyles solutions</a></span></p>
+                        <p>0722998360</p>
+                    </div>
+
+                </div>
+
+
+
+            </div>
+
+            <button id="downloadBtn">Download as PDF</button>
+        </div>
+    </div>
+
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+<script>
+    document.getElementById('downloadBtn').addEventListener('click', function () {
+        const resume = document.getElementById('resume');
+        html2pdf().from(resume).save('My_Resume.pdf');
+    });
+</script>
+
+
+</html>
